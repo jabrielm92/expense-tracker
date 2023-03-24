@@ -1,0 +1,51 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #a8da97;
+}
+
+.dashboard-header {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #0f200f;
+}
+
+.dashboard-subheader {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #2C5F2D;
+}
+
+.dashboard-inputs {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.dashboard-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: #0d280e;
+}
+
+.dashboard-expense {
+  color: #D92E1D;
+}
+
+.dashboard-income {
+  color: #234d0b;
+}
+
+.dashboard-item-reminder-date {
+  font-size: 0.8rem;
+  color: #888;
+  margin-right: 1rem;
+}

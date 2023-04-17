@@ -49,9 +49,9 @@ const Dashboard = () => {
       });
     };
 
-    const intervalId = setInterval(checkReminders, 60 * 1000); // Check every minute
+    const intervalId = setInterval(checkReminders, 60 * 1000); 
 
-    return () => clearInterval(intervalId); // Clean up interval on unmount
+    return () => clearInterval(intervalId); 
   }, [expenses]);
 
   const removeExpense = async (id) => {

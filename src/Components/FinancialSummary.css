@@ -1,0 +1,38 @@
+.financial-summary-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.financial-summary-header {
+  text-align: center;
+}
+
+.financial-summary-subheader {
+  text-align: center;
+}
+
+.financial-summary-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.financial-summary-chart {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.financial-summary-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top: 2px solid #ccc;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}

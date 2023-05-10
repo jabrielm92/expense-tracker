@@ -6,6 +6,7 @@ import SignUp from './Components/SignUp';
 import Login from './Components/Login';
 import DashboardWrapper from './Components/DashboardWrapper';
 import { firebase } from './Components/firebase';
+import FinancialSummary from './Components/FinancialSummary';
 
 import './App.css';
 
@@ -32,9 +33,11 @@ function App() {
         <Navbar isAuthenticated={isAuthenticated} />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/expense-tracker" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<DashboardWrapper />} />
+          <Route path="/financial-summary" element={<FinancialSummary />} />
         </Routes>
       </div>
     </Router>

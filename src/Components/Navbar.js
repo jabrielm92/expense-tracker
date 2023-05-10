@@ -17,6 +17,7 @@ const Navbar = ({ isAuthenticated, onLogout }) => {
         {isAuthenticated && (
           <>
             <Link to="/dashboard" className="nav-btn">Dashboard</Link>
+            <Link to="/financial-summary" className="nav-btn">Financial Summary</Link>
             <Logout className="logout-btn" onLogout={onLogout} />
           </>
         )}

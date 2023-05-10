@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Dashboard.css';
-import Chart from './Chart';
+
 import ExpenseInput from './ExpenseInput';
 import IncomeInput from './IncomeInput';
 import DashboardItem from './DashboardItem';
@@ -80,14 +80,14 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <h1 className="dashboard-header">Dashboard</h1>
-      <p className="dashboard-subheader">Here's a summary of your expenses and income:</p>
+      <h1 className="dashboard-header">Welcome Back!</h1>
+      <p className="dashboard-subheader">Add income and expenses below:</p>
       <div className="dashboard-inputs">
         <ExpenseInput expenses={expenses} setExpenses={setExpenses} />
         <IncomeInput income={income} setIncome={setIncome} />
       </div>
       <div>
-        <Chart totalExpenses={totalExpenses} totalIncome={totalIncome} />
+
       </div>
 
       <div className="dashboard-list">

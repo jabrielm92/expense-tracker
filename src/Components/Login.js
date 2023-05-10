@@ -22,6 +22,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <h1 className="login-header">Log In</h1>
+      <p>demo email: myname@gmail.com password: cookies1</p>
       <form className="login-form" onSubmit={handleLogin}>
         <label className="login-label" htmlFor="email">Email:</label>
         <input

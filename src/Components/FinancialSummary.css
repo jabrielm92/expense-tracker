@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: auto;
 }
 
 .financial-summary-header {
@@ -15,10 +16,12 @@
 
 .financial-summary-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 1.5rem;
+  max-width: auto;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #a8da97;
 }
 
 .financial-summary-chart {

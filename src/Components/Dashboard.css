@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: auto;
-  justify-content: center;
+  max-width: 800px;
   margin: 0 auto;
   background-color: #a8da97;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .dashboard-header {
@@ -31,8 +32,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  font-size: 1.2rem;
+  width: 80%;
+  font-weight: bold;
+  font-size: 1.5rem;
   margin-top: 1.5rem;
   color: #0d280e;
 }
@@ -48,5 +50,5 @@
 .dashboard-item-reminder-date {
   font-size: 0.8rem;
   color: #888;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }

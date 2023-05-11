@@ -58,7 +58,6 @@ const Dashboard = () => {
     const updatedExpenses = expenses.filter((expense) => expense.id !== id);
     setExpenses(updatedExpenses);
   
-    // Remove the expense from the Firestore database
     try {
       await firebase.firestore().collection('expenses').doc(id).delete();
     } catch (error) {
@@ -70,7 +69,6 @@ const Dashboard = () => {
     const updatedIncome = income.filter((income) => income.id !== id);
     setIncome(updatedIncome);
   
-    // Remove the income from the Firestore database
     try {
       await firebase.firestore().collection('income').doc(id).delete();
     } catch (error) {
@@ -80,11 +78,11 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <h1 className="dashboard-header">Welcome Back!</h1>
+      <h1 className="dashboard-header">Welcome Back To Your Dashboard!</h1>
       <p className="dashboard-subheader">Add income and expenses below:</p>
       <div className="dashboard-inputs">
+        <IncomeInput income={income} setIncome={setIncome} /> 
         <ExpenseInput expenses={expenses} setExpenses={setExpenses} />
-        <IncomeInput income={income} setIncome={setIncome} />
       </div>
       <div>
 
